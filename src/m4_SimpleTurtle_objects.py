@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Brett Tuttle.
 """
 ###############################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -87,16 +87,16 @@ window.delay(20)  # Bigger numbers mean slower animation.
 # The next few lines show how to:
 #   - CONSTRUCT (make) a  SimpleTurtle  object and ASSIGN a NAME to the object.
 # -----------------------------------------------------------------------------
-boris = rg.SimpleTurtle()
+kyrie = rg.SimpleTurtle()
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
 #   - Ask the SimpleTurtle object to do things by applying METHODs to it.
 # The numbers in the parentheses are called ARGUMENTS.
 # -----------------------------------------------------------------------------
-boris.forward(100)
-boris.left(90)
-boris.forward(200)
+kyrie.forward(100)
+kyrie.left(90)
+kyrie.forward(200)
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
@@ -116,7 +116,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -126,6 +126,11 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+kyrie.right(45)
+kyrie.pen = rg.Pen('blue', 10)
+kyrie.backward(50)
+kyrie.left(45)
+kyrie.forward(150)
 
 ###############################################################################
 #
@@ -153,6 +158,12 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+julie = rg.SimpleTurtle('turtle')
+julie.pen = rg.Pen('blue', 40)
+julie.go_to(rg.Point(100,100))
+julie.forward(5)
+julie.right(90)
+julie.forward(75)
 
 ###############################################################################
 #
