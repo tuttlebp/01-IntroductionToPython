@@ -37,7 +37,7 @@ for k in range(300):
     betsy.right(k)
     betsy.forward(k)
     roger.speed = 10
-    roger.pen = rg.Pen('pink', 1)
+    roger.pen = rg.Pen('gold', 1)
     roger.go_to(rg.Point(0,300))
     roger.forward(30)
     roger.right(k)
