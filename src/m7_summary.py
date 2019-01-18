@@ -43,6 +43,7 @@ import rosegraphics as rg
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+window = rg.TurtleWindow()
 donkey = rg.SimpleTurtle()
 donkey.pen = rg.Pen('blue',5)
 donkey.left(90)
@@ -53,4 +54,4 @@ donkey.pen_down()
 donkey.pen = rg.Pen('green', 10)
 donkey.right(180)
 donkey.forward(150)
-
+window.close_on_mouse_click()
